@@ -12,12 +12,13 @@ public class TreeNode {
     /**
      * 左序遍历
      */
-    void prevOrder(){
-        System.out.print(this.val + "\t");
-        if (this.left !=null){
+    void prevOrder() {
+        if (this.left != null) {
             this.left.prevOrder();
         }
-        if (this.right!=null){
+        System.out.print(this.val + "\t");
+
+        if (this.right != null) {
             this.right.prevOrder();
         }
     }
